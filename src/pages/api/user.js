@@ -7,8 +7,6 @@ export default async function handler(request, response) {
   console.log("dafsdgh");
   console.log("logging data: ", data);
   console.log("logging data.title: ", data.title);
-
   response.setHeader("Access-Control-Allow-Origin", "*");
-
   response.status(200).json(data);
 }
